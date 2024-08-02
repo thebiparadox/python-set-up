@@ -19,11 +19,11 @@ while True: #the main game loop
             break #break out of the player input loop.
     print('Type one of r, p, s, or q.')
 
-    if playerMove - 'r': #displays what the player chose
+    if playerMove == 'r': #displays what the player chose
         print('ROCK versus...')
     elif playerMove == 'p':
         print('PAPER versus...')
-    elif playerMove = 's':
+    elif playerMove == 's':
         print('SCISSORS versus...')
 
     randomNumber = random.randint(1, 3) #displays what the computer chose
