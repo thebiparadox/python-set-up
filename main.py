@@ -1,0 +1,1 @@
+print('Real stupidity beats artificial intelligence every time.')
