@@ -1,17 +1,10 @@
-string = input('Enter a string here: ') #gets string from user
+s = 'absj'
 
-alphaStringCounter = 0 #counter
+slicedString = s[:]
 
-for letter in string:
-    if letter == 'a':
-        alphaStringCounter = alphaStringCounter + 1
-        continue
-    elif letter == 'b':
-        alphaStringCounter = alphaStringCounter + 1
-        continue
-    elif letter == 'c':
-        alphaStringCounter = alphaStringCounter + 1
-    else:
-        break
+current = 0
+longest = 0
 
-print('Longest substring in alphabetical order is:', alphaStringCounter)
+for letter in range(0, len(slicedString)):
+    
+
