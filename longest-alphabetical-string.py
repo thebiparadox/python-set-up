@@ -1,15 +1,17 @@
-s = 'abccdef'
+s = 'hipagbsabcdefg'
 
 substring = ''
 previousCharacter = ''
-numberInString = 0
+previousString = 0
 longestString = ''
 
-for i in s:
-    if ord(s[0]) == ord(s[1]) - 1:
+for count, i in enumerate(s):
+    thisElement = ord(i)
+    nextElement = ord(s[(count + 1) % len(s)])
+    if thisElement <= nextElement:
         substring = substring + i
     else:
-        if len(substring) > numberInString:
+        if len(substring) > previousString:
             longestString = substring
         substring = ''
     previousCharacter = i
