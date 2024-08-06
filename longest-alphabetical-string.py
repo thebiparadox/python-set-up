@@ -1,10 +1,24 @@
-s = 'absj'
+s = 'abccdef'
 
-slicedString = s[:]
+substring = ''
+previousCharacter = ''
+numberInString = 0
+longestString = ''
 
-current = 0
-longest = 0
+for i in s:
+    if ord(s[0]) == ord(s[1]) - 1:
+        substring = substring + i
+    else:
+        if len(substring) > numberInString:
+            longestString = substring
+        substring = ''
+    previousCharacter = i
 
-for letter in range(0, len(slicedString)):
-    pass
+print('Longest substring in alphabetical order is', longestString)        
+    
+    
+
+
+
+
 
