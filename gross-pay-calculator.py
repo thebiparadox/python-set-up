@@ -13,7 +13,7 @@ except:
     print('Error, please enter numeric input')
     sys.exit()
 
-def computePay(hours, rate):
+def computePay(hours, rate): #function to calculate pay
     if hours <= 40.0: #calcuates rate under 40 hours worked
         pay = round(hours * rate)
         return pay
@@ -24,4 +24,4 @@ def computePay(hours, rate):
         pay = round(regularPay + overtimePay)
         return pay
 
-print("Pay:", computePay(hours, rate)) #rounds to the nearest integer and prints result
+print("Pay:", computePay(hours, rate)) #prints result of function computePay()
